@@ -1,0 +1,67 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import "bootstrap";
+@import "font-awesome-compass";
+@import "font-awesome";
+@import "jquery.fullPage";
+
+/* global vars */
+$header-font: 				'Montserrat', sans-serif;
+$primary-blue: 			#0D0AB3;
+$secondary-blue:			#413DDA;
+$teriary-blue:				#AEBEFF;
+$primary-background:	#f2f2f2;
+$secondary-background: rgba(115, 115, 115, 0.9);
+$background-fade: rgba(115, 115, 115, 0.5);
+
+
+h1{
+	font-size: 55px;
+	font-weight: bold;
+	font-family: $header-font !important;
+	line-height: 1.4;
+}
+h2{
+	font-size: 45px;
+	font-family: $header-font !important;
+	font-weight:500;
+}
+h3{
+	font-size: 40px;
+	color: $primary-blue; 
+	font-family: $header-font !important;
+	font-weight:500;
+}
+h4{
+	font-size:24px;
+	color:white;
+	font-family: $header-font !important;
+	font-weight:500;
+	margin-bottom:0px;
+}
+h5{
+	font-size:18px;
+	color:$teriary-blue;
+	font-family: $header-font !important;
+	font-weight:900;
+	margin-bottom:2px;
+	margin-top:5px;
+}
+p{
+	font-size:16px;
+}
+
+.main-row{
+	height:90%;
+}
+
+.first-line{
+	height:33%
+}
+
+.second-line{
+	height:33%
+}
+.third-line{
+	height:33%
+}
