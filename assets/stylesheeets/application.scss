@@ -3,20 +3,26 @@
 @import "bootstrap";
 @import "font-awesome-compass";
 @import "font-awesome";
-@import "jquery.fullPage";
-@import "morphext";
 
 /* global vars */
 $header-font: 				'Montserrat', sans-serif;
-$primary-blue: 			#0D0AB3;
+$primary-blue: 				#0D0AB3;
 $secondary-blue:			#413DDA;
+
 $teriary-blue:				#AEBEFF;
+
 $primary-background:	#0082FF;
+
 $secondary-background: rgba(115, 115, 115, 0.9);
 $background-fade: rgba(115, 115, 115, 0.5);
 
-.section{
-	background-color: $primary-background !important;
+
+#main-content{
+	background: url("../background.jpg") no-repeat center center fixed; 
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding-top:90px;
 }
 
 h1{
@@ -24,11 +30,14 @@ h1{
 	//font-weight: bold;
 	font-family: $header-font !important;
 	line-height: 1.4;
+	color: #f8f8f8;
+	text-align:center;
 }
 .sentence{
 	font-size: 55px;
 	font-family: $header-font !important;
 	line-height: 1.4;
+	color: #f8f8f8;
 }
 h2{
 	font-size: 45px;
@@ -60,22 +69,56 @@ p{
 	font-size:16px;
 }
 
-.main-row{
-	height:90%;
+.section{
+	height:100vh;
+	width:100%;
 }
 
-.first-line{
+.what{
+	margin:0px 0px;
+}
+
+#why{
+	margin-top:200px;
+}
+
+#first-line{
 	height:30%
 }
 
-.second-line{
+#second-line{
 	height:37%;
 }
-.third-line{
+#third-line{
 	position: relative;
 	height:33%
 }
-.bottom{
-	position: absolute;
-	 bottom: 0;
+.highlight{
+	color:#ffc300;
+	font-weight:bold;
+}
+/*
+* Blinking Cursor
+*
+*/
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
