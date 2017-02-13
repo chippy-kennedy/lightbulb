@@ -1,4 +1,5 @@
-#= require 'jquery-3.1.1.slim.min'
+#= require 'jquery-3.1.1.min.js'
+#= require 'jquery-3.1.1.slim.min.js'
 #= require 'tether.min.js'
 #= require 'bootstrap.js'
 #= require 'bootstrap.min.js'
@@ -21,6 +22,11 @@ $(document).ready(function() {
 			backSpeed: 100,
 			showCursor:false,
 			loop: true
+	});
+
+	$('a').on('click', function(e) {
+		e.preventDefault();
+		$('body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
 	});
 
 });
