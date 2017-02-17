@@ -24,9 +24,9 @@ $(document).ready(function() {
 			loop: true
 	});
 
-	$('a').on('click', function(e) {
+	/*$('a').on('click', function(e) {
 		e.preventDefault();
 		$('body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-	});
+	});*/
 
 });
