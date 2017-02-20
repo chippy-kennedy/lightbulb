@@ -13,6 +13,7 @@ $secondary-blue:			#413DDA;
 $teriary-blue:				#AEBEFF;
 $primary-background:	#0082FF;
 $primary-white:		#f8f8f8;
+$secondary-white:	#5006AE;
 $primary-yellow:		#ffc300;
 
 $secondary-background: rgba(115, 115, 115, 0.9);
@@ -128,12 +129,12 @@ section#home{
 section#why{
 	border-top: 3px solid $primary-yellow;
 	height:45vh;
-	background-color:$primary-white;
+	background-color:$secondary-white;
 	h1,h2,p{
-		color:$primary-blue !important;
+		color:$primary-white !important;
 	}
 	a span.downPage{
-		color:$primary-blue !important;
+		color:$primary-white !important;
 	}
 }
 section#what{
@@ -143,14 +144,37 @@ section#what{
 section#how{
 	padding-top:30vh;
 	border-top: 3px solid $primary-yellow;
-	height:45vh;
+	height:80vh;
 	padding-top:40px;
-	background-color:$primary-white;
+	background-color:$secondary-white;
 	h1,h2,p{
-		color:$primary-blue !important;
+		color:$primary-white !important;
 	}
 	a span.downPage{
-		color:$primary-blue !important;
+		color:$primary-white !important;
+	}
+
+	.table{
+		margin-top:100px;
+		border-collapse: collapse;
+		td, th{
+			height:100px;
+			border: 2px solid $primary-white;
+		}
+		tr:first-child th {
+			border-top: 0;
+		}
+		tr:last-child td {
+			border-bottom: 0;
+		}
+		tr td:first-child,
+		tr th:first-child {
+			border-left: 0;
+		}
+		tr td:last-child,
+		tr th:last-child {
+			border-right: 0;
+		}
 	}
 }
 section#partners{
