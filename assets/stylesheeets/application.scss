@@ -71,7 +71,7 @@ h3{
 	font-weight:200 !important;
 	line-height: 1.35em !important;
 }
-h3.strong{
+.strong{
 	font-weight:600 !important;
 	text-align:center !important;
 }
@@ -109,22 +109,27 @@ section{
 	}
 }
 
+.call-to-action{
+    text-align: center;
+}
+
 .btn{
-	width:100%;
+	width:400px;
 	height:80px;
 	text-align:center;
 	margin: auto;
-	color:$primary-yellow;
+	color:$primary-black;
 	//border-color: $primary-yellow;
-	background-color:$primary-blue;
+	background-color:$primary-yellow;
+	border-color: $primary-yellow;
 	font-size:30px;
 	font-weight:800;
 	border-radius:0px;
 }
 .btn:hover{
-	background-color:$primary-yellow;
-	border-color: $primary-yellow;
-	color:$primary-blue;
+	background-color:$primary-blue;
+	border-color: $primary-blue;
+	color:$primary-yellow;
 }
 
 .box{
@@ -159,6 +164,9 @@ section#what, section#partners{
 		h2{
 			font-size:30px;
 			color:$primary-white;
+		}
+		p{
+			padding-top:15px;
 		}
 	}
 	.blue-bg{
@@ -211,7 +219,7 @@ section#how{
 	}
 }
 section#partners{
-	padding-top:5vh;
+	padding:5vh 0 5vh 0;
 	background-color: $secondary-white;
 
 	.box{
@@ -235,7 +243,6 @@ section#partners{
 section#contact{
 	background-color: $primary-blue;
 	color:$primary-white;
-	height:200px;
 	h3,p,h1{color:$primary-white !important;}
 	.row{
 		padding-top:40px;
