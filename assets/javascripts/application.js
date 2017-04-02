@@ -4,6 +4,7 @@
 #= require 'bootstrap.js'
 #= require 'bootstrap.min.js'
 #= require 'typed.min.js'
+#= require 'jquery.flapper.js'
 #= require_tree ./
 #= require_self
 

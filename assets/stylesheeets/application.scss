@@ -2,14 +2,24 @@
 //@import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Ledger|Nixie+One');
 @import url('https://fonts.googleapis.com/css?family=Cardo');
+@import url('/BebasNeue.otf');
 
 @import "bootstrap";
 @import "font-awesome-compass";
 @import "font-awesome";
 
 /* global vars */
-$header-font: 			'Open Sans', sans-serif;//'Roboto', sans-serif; 
-$body-font:				'Open Sans', sans-serif; //'Nunito', sans-serif;	
+@font-face {
+	font-family: bebasNeue;
+	src: url('/BebasNeue.otf');
+}
+
+$header-font: 	'bebasNeue';
+$body-font: 		'BebasNeue';
+
+//$body-font:				'Open Sans', sans-serif; //'Nunito', sans-serif;	
+//$header-font: 			'Open Sans', sans-serif;//'Roboto', sans-serif; 
+
 $primary-blue: 				#0D0AB3;
 $secondary-blue:			#413DDA;
 $teriary-blue:				#AEBEFF;
@@ -52,10 +62,12 @@ h1{
 	text-align:center;
 }
 .sentence{
-	font-size: 55px;
+	font-size: 115px;
 	font-family: $header-font !important;
 	line-height: 1.4;
 	color: $primary-white;
+	font-weight:200 !important;
+	text-align:left;
 }
 h2{
 	font-size: 35px;
@@ -74,6 +86,9 @@ h3{
 .strong{
 	font-weight:600 !important;
 	text-align:center !important;
+}
+span.strong{
+	#font-weight:900 !important;
 }
 h4{
 	font-size:24px;
@@ -272,18 +287,13 @@ div.what{
 	padding: 0px 30px;
 }
 
-#first-line{
-	margin-top:10%;
-	height:28vh
+.highlight-blue{
+	color:$teriary-blue;
 }
 
-#third-line{
-	height:28vh;
-}
-
-.highlight{
+.highlight-yellow{
 	color:#ffc300;
-	font-weight:bold;
+	//font-weight:bold;
 }
 
 /*
