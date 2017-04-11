@@ -1,8 +1,6 @@
 /* imports */
-//@import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import url('https://fonts.googleapis.com/css?family=Ledger|Nixie+One');
-@import url('https://fonts.googleapis.com/css?family=Cardo');
 @import url('/BebasNeue.otf');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 @import "bootstrap";
 @import "font-awesome-compass";
@@ -15,14 +13,12 @@
 }
 
 $header-font: 	'bebasNeue';
-$body-font: 		'BebasNeue';
+$body-font: 'Roboto', sans-serif;
 
-//$body-font:				'Open Sans', sans-serif; //'Nunito', sans-serif;	
-//$header-font: 			'Open Sans', sans-serif;//'Roboto', sans-serif; 
+$primary-blue: 				#2175ff;
+$secondary-blue:			#4C8EFF;
+$teriary-blue:				#76A8FE;
 
-$primary-blue: 				#0D0AB3;
-$secondary-blue:			#413DDA;
-$teriary-blue:				#AEBEFF;
 $primary-background:	#0082FF;
 $primary-white:		#f8f8f8;
 $secondary-white:	#ECECEC;
@@ -34,8 +30,9 @@ $secondary-background: rgba(115, 115, 115, 0.9);
 $background-fade: rgba(115, 115, 115, 0.5);
 
 body{
-	background: url("../background_dark.jpg") no-repeat center center fixed; 
-	background-size: auto 100%;
+	background: $primary-blue; //url("../background_dark.jpg") no-repeat center center fixed; 
+	background: url("../bg.jpg") no-repeat center center fixed; 
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	height:100%;
@@ -56,32 +53,38 @@ body{
 h1{
 	font-size: 55px;
 	//font-weight: bold;
-	font-family: $header-font !important;
+	font-family: $body-font !important;
 	line-height: 1.4;
 	color: $primary-white;
 	text-align:center;
 }
 .sentence{
-	font-size: 115px;
+	font-size: 65px;
 	font-family: $header-font !important;
 	line-height: 1.4;
 	color: $primary-white;
 	font-weight:200 !important;
 	text-align:left;
+	padding: 20px 0px;
 }
 h2{
-	font-size: 35px;
+	font-size: 65px;
 	font-family: $header-font !important;
 	font-weight:200;
-	color:$primary-white;
+	color:$primary-black;
 	line-height: 1.35em !important;
+	text-align:center;
 }
 h3{
-	font-size: 30px;
+	font-size: 24px;
+	text-align:center;
 	color: $primary-black; 
 	font-family: $body-font !important;
 	font-weight:200 !important;
 	line-height: 1.35em !important;
+	.strong{
+		font-weight:600 !important;
+	}
 }
 .strong{
 	font-weight:600 !important;
@@ -91,11 +94,14 @@ span.strong{
 	#font-weight:900 !important;
 }
 h4{
-	font-size:24px;
-	color:white;
-	font-weight:200;
-	margin-bottom:0px;
-	font-family: $body-font;
+	font-size: 24px;
+	color: $primary-black; 
+	font-family: $body-font !important;
+	font-weight:200 !important;
+	line-height: 1.35em !important;
+	.strong{
+		font-weight:600 !important;
+	}
 }
 h5{
 	font-size:18px;
@@ -148,91 +154,60 @@ section{
 }
 
 .box{
-	.btn{
+	height:450px;
+	text-align:center;
+	padding: 30px 50px 30px 50px;
+	h3{color: $primary-white !important;}
+	h2{
+		font-size:30px;
+		color:$primary-white;
 	}
+	p{
+		padding-top:15px;
+	}
+}
+.blue-bg{
+	background-color:$primary-blue;
+}
+.white-bg{
+	background-color:$secondary-white;
+}
+.yellow-bg{
+	background-color:$secondary-blue;
+}
+.light-bg{
+	background-color:$teriary-blue;
 }
 
 //section-specific
 section#home{
-	padding-top:60px;
+	padding-top:190px;
+	padding-bottom:160px;
 	position:relative;
 	width: 100%;
-	min-height:90vh;
 }
-section#why{
+section#you{
 	border-top: 3px solid $primary-yellow;
 	background-color:$secondary-white;
-	padding:60px 0px;
-	h1,h2,p{
-		color:#000 !important;
-	}
 	a span.downPage{
 		color:$primary-white !important;
 	}
-
-}
-section#what, section#partners{
-	.box{
-		height:450px;
-		text-align:center;
-		padding: 30px 50px 30px 50px;
-		h2{
-			font-size:30px;
-			color:$primary-white;
-		}
-		p{
-			padding-top:15px;
-		}
+	li{
+		display:inline;
 	}
-	.blue-bg{
+	#mission{
+		padding-top:30px;
+		text-align:center;
+		margin-bottom:80px;
 		background-color:$primary-blue;
 	}
-	.white-bg{
-		background-color:$secondary-white;
-	}
-	.yellow-bg{
-		background-color:$secondary-blue;
-	}
-	.light-bg{
-		background-color:$teriary-blue;
-		h2,p{color:$primary-blue;}
-	}
-}
-section#how{
-	padding-top:30vh;
-	border-top: 3px solid $primary-yellow;
-	padding-top:40px;
-	background-color:$secondary-white;
-	h1,h2,p{
-		color:$primary-white !important;
-	}
-	a span.downPage{
-		color:$primary-white !important;
-	}
 
-	.table{
-		margin-top:100px;
-		border-collapse: collapse;
-		td, th{
-			height:100px;
-			border: 2px solid $primary-white;
-		}
-		tr:first-child th {
-			border-top: 0;
-		}
-		tr:last-child td {
-			border-bottom: 0;
-		}
-		tr td:first-child,
-		tr th:first-child {
-			border-left: 0;
-		}
-		tr td:last-child,
-		tr th:last-child {
-			border-right: 0;
-		}
-	}
 }
+
+section#how{
+	background-color:$secondary-white;
+}
+
 section#partners{
 	padding:5vh 0 5vh 0;
 	background-color: $secondary-white;
@@ -291,6 +266,10 @@ div.what{
 	color:$teriary-blue;
 }
 
+.highlighter{
+	background-color:$primary-blue;
+}
+
 .highlight-yellow{
 	color:#ffc300;
 	//font-weight:bold;
@@ -320,35 +299,4 @@ div.what{
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
-}
-
-/*
-* Section Transition
-*/
-
-@-webkit-keyframes sdb05 {
-	0% {
-		-webkit-transform: rotate(-45deg) translate(0, 0);
-		opacity: 0;
-	}
-	50% {
-		opacity: 1;
-	}
-	100% {
-		-webkit-transform: rotate(-45deg) translate(-20px, 20px);
-		opacity: 0;
-	}
-}
-@keyframes sdb05 {
-	0% {
-		transform: rotate(-45deg) translate(0, 0);
-		opacity: 0;
-	}
-	50% {
-		opacity: 1;
-	}
-	100% {
-		transform: rotate(-45deg) translate(-20px, 20px);
-		opacity: 0;
-	}
 }
