@@ -13,22 +13,7 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'thin'
 gem 'therubyracer'
 gem 'haml_coffee_assets'
-gem 'font-awesome-sass', '~> 4.7.0'
+gem 'font-awesome-sass', '~> 4.7.0'o
 
-#gem 'sqlite3'
-#gem 'activerecord', '3.2.17'
-#gem 'sinatra-activerecord'
-#gem 'compass'
-
-#gem 'font-awesome-sass'
-#gem 'dotenv'
-#gem 'capistrano'
-#gem 'capistrano-passenger'
-#gem 'capistrano-rbenv', '~> 2.0'
-#gem 'capistrano-bundler'
-
-#gem 'sys-filesystem'
-#gem 'rspec'
-#gem 'rack-test', :require => "rack/test"
-#gem 'simplecov', :require => false
-#gem 'capistrano-rails'
+#depreceated, but temp fix
+gem 'sprockets', '2.12.4'
