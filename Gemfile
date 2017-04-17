@@ -13,7 +13,7 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'thin'
 gem 'therubyracer'
 gem 'haml_coffee_assets'
-gem 'font-awesome-sass', '~> 4.7.0'o
+gem 'font-awesome-sass', '~> 4.7.0'
 
 #depreceated, but temp fix
 gem 'sprockets', '2.12.4'
