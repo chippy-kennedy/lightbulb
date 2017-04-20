@@ -21,10 +21,16 @@ $teriary-blue:				#76A8FE;
 
 $primary-background:	#0082FF;
 $primary-white:		#f8f8f8;
-$secondary-white:	#ECECEC;
-$primary-yellow:		#ffc300;
-
 $primary-black:#000;
+$secondary-white:	#ECECEC;
+
+$primary-yellow:		#ffd00a;
+$secondary-yellow: #FFD939;
+$teriary-yellow: #FFE269;
+
+
+
+
 
 $secondary-background: rgba(115, 115, 115, 0.9);
 $background-fade: rgba(115, 115, 115, 0.5);
@@ -175,11 +181,20 @@ section{
 .white-bg{
 	background-color:$secondary-white;
 }
-.yellow-bg{
+.blue-light-bg{
 	background-color:$secondary-blue;
 }
-.light-bg{
+.blue-lighter-bg{
 	background-color:$teriary-blue;
+}
+.yellow-bg{
+	background-color:$primary-yellow;
+}
+.yellow-light-bg{
+	background-color:$secondary-yellow;
+}
+.yellow-lighter-bg{
+	background-color:$teriary-yellow;
 }
 
 //section-specific
@@ -241,10 +256,21 @@ section#partners{
 
 	.client{
 		text-align:center;
-		img{
+		.logo{
 			//padding: 60px auto;
 			margin:60px auto;
 			display:block;
+		}
+		.with-quote{
+			margin:60px auto -40px auto;
+		}
+		.right-tri{
+			margin-left:-95%;
+			margin-bottom:60px;
+		}
+		.left-tri{
+			margin-right:-95%;
+			margin-bottom:60px;
 		}
 	}
 
